@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+  <h2>Compose Message</h2>
+  <form method="post">
+    <input name="to" placeholder="To (user_id)" required><br>
+    <input name="subject" placeholder="Subject"><br>
+    <textarea name="body" placeholder="Your message here..." rows="5"></textarea><br>
+    <button type="submit">Send</button>
+  </form>
+{% endblock %}

@@ -1,0 +1,5 @@
+body { font-family: Arial, sans-serif; max-width: 800px; margin: 20px auto; }
+nav a { margin-right: 10px; }
+.email { border: 1px solid #ccc; padding: 10px; margin: 10px 0; }
+.received { background: #eef; }
+.sent { background: #efe; text-align: right; }

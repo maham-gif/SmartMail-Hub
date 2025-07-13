@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+  <h2>Inbox for {{ me }}</h2>
+  {% for e in emails %}
+    <div class="email {{ 'sent' if e.from == me else 'received' }}">
+      <strong>{{ e.subject }}</strong><br>
+      <small>{{ e.timestamp }} — From: {{ e.from }} To: {{ e.to }}</small>
+      <p>{{ e.body }}</p>
+    </div>
+  {% else %}
+    <p>No emails found.</p>
+  {% endfor %}
+{% endblock %}
